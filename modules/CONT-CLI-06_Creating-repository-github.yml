@@ -37,6 +37,11 @@ screens:
         - do: "Start typing githubstudent"
           say: "I can search for collaborators and add them by entering the first few letters of their username."
       production-notes:
+  - lab:
+      title: Creating a Repository on GitHub
+      steps: 
+        - description: Clone your repo on the desktop
+        - description: Description of the next step
 additional-labs:
 additional-questions:
 resources:
