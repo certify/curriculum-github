@@ -6,6 +6,7 @@ sections:
     title: Getting Started with Collaboration
     description: This section introduces you to GitHub and the collaboration features we will use throughout the class.
     modules:
+      - SECT-01
       - COLL-00_Introducing-github
       - COLL-01_Exploring-a-repository
       - COLL-02_Using-issues
@@ -13,6 +14,7 @@ sections:
     title: Creating Your First Pull Request
     description: In this section you will learn about the GitHub flow and create your first pull request.
     modules:
+      - SECT-02
       - CONT-01_Understanding-github-flow
       - CONT-02_Using-branches
       - CONT-030_Creating-files-platform
@@ -24,6 +26,7 @@ sections:
     title: Using GitHub Locally
     description: In this section you will learn how to clone the repository to your desktop and work locally to make changes.
     modules:
+      - SECT-03
       - CONT-CLI-01_Basic-Configuration
       - CONT-CLI-02_Cloning-repository
       - CONT-CLI-03_Editing-local-files
@@ -33,6 +36,7 @@ sections:
     title: The Workflow End-to-End
     description: In this section you will review the workflow from start-to-finish and learn a few shortcuts along the way.
     modules:
+      - SECT-04
       - CONT-CLI-06_Creating-repository-github
       - CONT-CLI-07_Creating-local-branches
       - CONT-CLI-08_Workflow-review
@@ -42,6 +46,7 @@ sections:
     title: Working with Local Files
     description: In this section you will learn how to perform common file operations with git.
     modules:
+      - SECT-05
       - CONT-CLI-10_Modifying-local-files
       - CONT-CLI-11_Viewing-local-diffs
       - CONT-CLI-12_Merging-changes
@@ -50,6 +55,7 @@ sections:
     title: Fixing Common Issues with Git
     description: In this section you will learn how to manipulate your repository and its history to craft a better story for your project.
     modules:
+      - SECT-06
       - CONT-CLI-14_Creating-repository-local
       - CONT-CLI-21_Handling-merge-conflicts
       - CONT-CLI-15_Renaming-moving-files
@@ -64,4 +70,5 @@ sections:
     title: Creating Shortcuts
     description: In this section you will learn how to create custom shortcuts for git commands.
     modules:
+      - SECT-07
       - CONT-CLI-23_Creating-aliases
