@@ -1,0 +1,11 @@
+title: Creating Shortcuts
+pre-requisites:
+learning-objective: In this section you will learn how to create custom shortcuts for git commands.
+screens:
+  - image-slide:
+      title: Course Progress
+      image: course-map-gh-devs-07.jpg
+      presenter-script:
+additional-labs:
+additional-questions:
+resources:

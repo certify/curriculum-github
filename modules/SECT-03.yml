@@ -1,0 +1,11 @@
+title: Using GitHub Locally
+pre-requisites:
+learning-objective: In this section you will learn how to clone the repository to your desktop and work locally to make changes.
+screens:
+  - image-slide:
+      title: Course Progress
+      image: course-map-gh-devs-03.jpg
+      presenter-script:
+additional-labs:
+additional-questions:
+resources:

@@ -1,0 +1,11 @@
+title: The Workflow End-to-End
+pre-requisites:
+learning-objective: In this section you will review the workflow from start-to-finish and learn a few shortcuts along the way.
+screens:
+  - image-slide:
+      title: Course Progress
+      image: course-map-gh-devs-04.jpg
+      presenter-script:
+additional-labs:
+additional-questions:
+resources:

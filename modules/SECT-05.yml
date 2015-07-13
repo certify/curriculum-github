@@ -1,0 +1,11 @@
+title: Working with Local Files
+pre-requisites:
+learning-objective: In this section you will learn how to perform common file operations with git.
+screens:
+  - image-slide:
+      title: Course Progress
+      image: course-map-gh-devs-05.jpg
+      presenter-script:
+additional-labs:
+additional-questions:
+resources:
