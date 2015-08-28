@@ -33,7 +33,7 @@
 * Branching keeps the code on `master` safe while allowing you to experiment.
 * Create a branch by clicking on the `branch` drop-down and entering your branch name in the text field.
 * Any files you create, edit, or delete will then be applied to that branch.
-* Be careful, GitHub automatically puts you on `master`, so always make sure you're on the right branch before you start working.
+* Be careful; GitHub automatically puts you on `master`, so always make sure you're on the right branch before you start working.
 
 2.5: Creating Files on GitHub
 
@@ -71,8 +71,8 @@
 * Start a new branch on GitHub to work on.
 * Using the command line, `cd` to the directory that you want to put your local repo in.
 * Copy the clone URL on GitHub.
-* Type `git clone CLONE_URL`. 
-* `cd` into the new cloned repo and type `git status`. 
+* Type `git clone CLONE_URL`.
+* `cd` into the new cloned repo and type `git status`.
 * `git branch` will show you the available branches. Only `master` appears.
 * `git branch -a` will show all the remote branches.
 * `git checkout BRANCH_NAME` will clone the branch you want onto your local machine, and all edits you make locally with be applied to that branch until you checkout another one.
@@ -87,7 +87,7 @@
 
 * `git status` lets you see which files have been changed since the last commit.
 * `git add FILE_NAME` adds that file to the staging area. `git add .` adds all the changed files to staging.
-* `git commit` will submit all those file changes under one unit of work. 
+* `git commit` will submit all those file changes under one unit of work.
 * This also opens your default text editor (as set earlier in this lesson) for you to add a commit message.
 * This commit will happen locally, and only on the checked out branch. If you check out another branch, the changes will no longer show in that file.
 
@@ -109,27 +109,27 @@
 * Private repositories can only be viewed, cloned, etc. by collaborators you have added.
 * You are allowed an unlimited number of public repos on your account, but must have a paid account to have any private repositories.
 * A `.gitignore` file tells git which types of files it shouldn't bother tracking. GitHub allows you to auto-generate your `.gitignore` file.
-* You may add an open source liscence to your repository if you'd like to make it open source.
+* You may add an open source license to your repository if you'd like to make it open source.
 * Once you've created your repo, you can add collaborators by searching for their GitHub user name in the `Collaborators` section of the repo.
 
 4.4: Creating Branches Locally
 
 * `git branch` shows which branch you're on locally, and which other local branches exist.
-* `git branch NEW_BRANCH_NAME` creates a new local branch. 
+* `git branch NEW_BRANCH_NAME` creates a new local branch.
 * You still must check out this new branch to edit it. `git checkout NEW_BRANCH_NAME`
 
 4.6: Workflow Review
 
 * This is a review of the workflow video from earlier.
-* `git add .` adds _all_ modiffied or new files to be commited, so you don't have to write out each file.
+* `git add .` adds _all_ modified or new files to be committed, so you don't have to write out each file.
 * You can write your commit message along with your commit command using the syntax: `git commit -m "COMMIT_MESSAGE"`.
 * Once this is finished, you must create a pull request on GitHub, and merge it on GitHub once it's completed.
 
 4.8: Pulling Changes from the Remote
 
 * When the remote repository has been changed (such as after a pull request), you need to update your local repository manually.
-* The command `git pull` will make your local working branch up to date with the remote version of that same branch. 
-* This will not delete local branches that have been deleted on the remote repo. 
+* The command `git pull` will make your local working branch up to date with the remote version of that same branch.
+* This will not delete local branches that have been deleted on the remote repo.
 * To delete local branches that do not have a remote counterpart, use the `git branch --merged` command to list all such local branches, and then `git branch -d BRANCH_NAME` to delete specific local branches.
 
 ---
@@ -146,7 +146,7 @@
 * `git diff` alone compares the working directory to the staged version of the file.
 * `git diff --staged` compares the staged version to the most recent commited version.
 * `git diff HEAD` _combines_ the changes in your working and staged versions of the file, and compares them to the version of the file designated as HEAD (most often, the most recent commit).
-* `git diff --color-words` displays a word-by-word comparision rather than a line-by-line comparison, helpful for small changes. 
+* `git diff --color-words` displays a word-by-word comparision rather than a line-by-line comparison, helpful for small changes.
 
 5.7: Merging Local Changes
 
@@ -214,7 +214,7 @@
 * `git revert` reverts a specific commit. `git reset` resets git _to_ a specific commit.
 * `git reset --soft <commit_to>` resets git to a specific commit, and puts the commits you're resetting into the staging area.
 * `git reset --mixed <commit_to>` resets git to a specific commit, and puts the commits you're resetting into the working directory.
-* `git reset --hard <commit_to>` resets git to a specific commit, and deletes the commits you're resetting. 
+* `git reset --hard <commit_to>` resets git to a specific commit, and deletes the commits you're resetting.
 * Just like with `git revert` you can use the commit ID, or you can use the syntax `HEAD~<mumber>`. The number you put will be the number of sets backwards from the current HEAD that git will move the new HEAD to.
 * You can always used `git log` to see all your previous history to know where to reset to.
 
@@ -223,7 +223,7 @@
 * You can remove changes in the working directory using `git checkout`.
 * This is destructive! You will throw away the changes and not be able to get them back.
 * `git checkout --<file_name>` is the syntax. The `--` lets git know you're talking about a file. This will revert the file to the version found in the last commit.
-* This only works for files in the working directory. Files in the staging area or already commited won't be reverted. 
+* This only works for files in the working directory. Files in the staging area or already commited won't be reverted.
 
 6.24: Removing Tracked Files
 
@@ -237,4 +237,4 @@
 * You can create alieses in git that let you call on the short alias instead of writing out a full long command.
 * You do this by setting a global alias using `git config`.
 * `git config --global alias.lol "log --oneline --graph --decorate --all"` would let you type `git lol` instead of the entire log command with all its options.
-* `git config --global alias.co "commit -m"` would let you write `git co "Commit Message"` to quickly commit with a message attached. 
+* `git config --global alias.co "commit -m"` would let you write `git co "Commit Message"` to quickly commit with a message attached.
