@@ -67,6 +67,12 @@ sections:
       - DSS-23_log
       - DSS-END-08_working-local-files
   -
+    title: The Fork-and-Pull Workflow
+    description: In this section you will learn how to use the fork and pull workflow.
+    modules:
+      - DSS-34_fork-workflow
+      - DSS-35_multiple-remotes
+  -
     title: Fixing Common Issues with Git
     description: In this section you will learn how to manipulate your repository and its history to craft a better story for your project.
     modules:

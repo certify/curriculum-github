@@ -1,0 +1,55 @@
+title: Working with Forks
+pre-requisites: DSS-23_log
+learning-objective: Collaborating with the fork-and-pull workflow.
+screens:
+  - image-slide:
+      title: What is a fork?
+      image: blank.png
+      presenter-script: |
+        So far, we have covered the basic GitHub workflow which includes creating branches, pull requests, and merging into master.
+
+        In some cases, you will be working on projects that have restrictions on who can merge code into the master branch. These projects will typically use a fork-and-pull workflow.
+
+        A fork creates a copy of a repository in different account. The relationship between these two repositories is maintained so you can create pull requests between your fork and the upstream repository.
+  - video-slide:
+      title: Working with Forks
+      video: https://youtu.be/DU_Z_3ux29c
+      video-script:
+        - do: "Access the repository to be forked"
+          say: "Creating a fork is easy with GitHub. Simply access the repository you would like to fork."
+        - do: "Click `fork`"
+          say: "And click the fork button."
+        - do: "Select the account"
+          say: "If you are part of more than one organization, GitHub will ask where you would like to place the forked copy of the repository."
+        - do: "Show fork icon"
+          say: "GitHub clearly indicates this is a forked repository"
+        - do: "Show upstream repository"
+          say: "And provides an quick link to the upstream repository."
+        - do: "Show commits, branches, PRs and missing issues"
+          say: "As you can see, your fork contains all of the project history and branches, as well as any pull requests that were created before you forked the project. The only thing missing is issues. These are turned off by default when you create a fork, but can easily be enabled on in the repository settings."
+        - do: "Make a change to a file"
+          say: "Once you have created a fork, you can work with your forked repository just like any other. You can clone it to your local computer, checkout existing branches, and push changes back to your fork of the project."
+        - do: "Click Pull Request"
+          say: "When you are ready to submit your changes to the upstream repository, you will create a pull request."
+        - do: "Show base and compare fork dropdown"
+          say: "Select the upstream repository and branch as your base, and compare it to the new branch you created on your fork."
+      production-notes:
+  - lab:
+      title: Forking a Repository
+      id: DSS-34-lab-01
+      presenter-script:
+        - Let's create a fork of a repository.
+      steps:
+        - description: Create a fork the repository found at `githubschool/github-games`.
+          id: DSS-34-fork
+        - description: Create a branch in your fork of the repository.
+          id: DSS-34-branch
+        - description: Edit the README.md file to replace `githubschool` with your username.
+          id: DSS-34-edit
+        - description: Create a Pull Request to the upstream repository.
+          id: DSS-34-pull
+additional-labs:
+additional-questions:
+resources:
+  - title: "Video: GitHub & Git Foundations - Forks"
+    url: https://www.youtube.com/watch?v=5oJHRbqEofs

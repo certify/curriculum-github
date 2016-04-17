@@ -1,0 +1,50 @@
+title: Working with Multiple Remotes
+pre-requisites: DSS-23_log
+learning-objective: Learn how to set up and pull from multiple remotes.
+  - image-slide:
+      title: Use Cases for Multiple Remotes
+      image: blank.png
+      presenter-script: |
+        Git allows you to connect multiple remotes to a single repository.
+
+        So far, we have worked with a single remote called origin. Origin refers to the repository where you originated the clone. This is really just a human-friendly name. You can call a remote anything you would like.
+
+        Sometimes you will want to set up a second remote. For example, when you are working on a fork and want to pull any changes from the upstream repository, you will set up a second remote pointing to the parent repository. By convention, we typically call this the upstream remote.
+  - video-slide:
+      title: Working with Multiple Remotes
+      video: https://youtu.be/DU_Z_3ux29c
+      video-script:
+        - do: "Clone the repository"
+          say: "You only need to work with remotes when you are working locally, so let's clone the repository to our desktop."
+        - do: "Type `git remote`"
+          say: "The command `git remote` will return a list of the remotes currently associated with this repository."
+        - do: "Type `git remote -v`"
+          say: "If you would like to see the full URL for the remote, you can add `-v` or `--verbose`."
+        - do: "Type `git remote add upstream <url>`"
+          say: "Typing `git remote add` will allow you to create a new remote. Then you will provide a name for the remote and the URL. This is the same URL you would use to clone the repository from GitHub."
+        - do: "Type `git fetch upstream master`"
+          say: "Now you can simply use `git fetch` to retrieve a read only copy of the changes introduced on the master branch of the upstream repository."
+        - do: "Type `git checkout master`"
+          say: "Check out the branch you would like to update."
+        - do: "Type `git merge upstream/master`"
+          say: "Then merge the changes from the upstream master branch into your local branch."
+      production-notes:
+  - lab:
+      title: Updating a Fork from Upstream
+      id: DSS-35-lab-01
+      presenter-script:
+        - Let's retrieve the updates from the upstream remote.
+      steps:
+        - description: Clone the fork of your repository to your local computer.
+          id: DSS-35-clone
+        - description: Create an upstream remote for the parent repository.
+          id: DSS-35-branch
+        - description: Fetch the changes from the upstream master.
+          id: DSS-35-fetch
+        - description: Merge the changes into the local master for your fork.
+          id: DSS-35-merge
+additional-labs:
+additional-questions:
+resources:
+  - title: "Video: GitHub & Git Foundations - Forks"
+    url: https://www.youtube.com/watch?v=5oJHRbqEofs
