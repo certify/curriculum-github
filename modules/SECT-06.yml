@@ -1,0 +1,11 @@
+title: Fixing Common Issues with Git
+pre-requisites:
+learning-objective: In this section you will learn how to manipulate your repository and its history to craft a better story for your project.
+screens:
+  - image-slide:
+      title: Course Progress
+      image: course-map-gh-devs-06.jpg
+      presenter-script:
+additional-labs:
+additional-questions:
+resources:

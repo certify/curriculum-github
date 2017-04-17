@@ -1,0 +1,11 @@
+title: Creating Your First Pull Request
+pre-requisites:
+learning-objective: In this section you will learn about the GitHub flow and create your first pull request.
+screens:
+  - image-slide:
+      title: Course Progress
+      image: course-map-gh-devs-02.jpg
+      presenter-script:
+additional-labs:
+additional-questions:
+resources:

@@ -1,0 +1,11 @@
+title: Getting Started with Collaboration
+pre-requisites:
+learning-objective: This section introduces you to GitHub and the collaboration features we will use throughout the class.
+screens:
+  - image-slide:
+      title: Course Progress
+      image: course-map-gh-devs-01.jpg
+      presenter-script:
+additional-labs:
+additional-questions:
+resources:
